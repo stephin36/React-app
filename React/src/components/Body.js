@@ -1,6 +1,6 @@
-import RestaurantCard from "../components/RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
-import Shimmer from "../components/Shimmer";
+import Shimmer from "./Shimmer";
 
 
 

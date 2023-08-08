@@ -1,24 +1,35 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
 
-//const heading = React.createElement("h1", {id: "heading"}, "Hello World!");
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *  - Search
+ *  - RestaurantContainer
+ *    - RestaurantCard
+ *      - Img
+ *      - Name of Res, Star Rating, cuisine, delery tie
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
+
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//root.render(heading);
-
-//const parent = React.createElement("div", {id: "parent"}, React.createElement("div", {id: "child"}, 
-               //[React.createElement("h1", {}, "This is h1 tag"), React.createElement("h2", {}, "This is h2 tag" )]));
-
-const Heading = () => (<><h1 id="heading" className="parent">Hello World from JSX!</h1><h2>Stephin Joseph</h2></>);
-
-const HeadComponent = () => 
-    (<div id="container"> 
-    <Heading />
-    <h1>Welcome to React</h1>
-    </div>);
-
-
-root.render(<HeadComponent />);
-
-
+root.render(<AppLayout />);
