@@ -29,7 +29,7 @@ class UserClass extends React.Component {
         console.log("Child render called");
         const {name, login, id } = this.state.userInfo;
         return(
-            <div className="user-card">
+            <div className="user-card  m-4 p-4 bg-gray-50 rounded-lg">
                 <button onClick={ () => {
                 }}>Counter</button>
                 <h2>Name: {name}</h2>
